@@ -2,28 +2,28 @@ art_make( MODULE_LIBRARIES
         larreco_RecoAlg_ImagePatternAlgs_DataProvider
 	lardata_ArtDataHelper
         lardataobj_RawData
-        art_Framework_Services_System_TriggerNamesService_service
+        art::Framework_Services_System_TriggerNamesService_service
         larsim_MCCheater_ParticleInventoryService_service
                        larreco_Calorimetry
                        larcorealg_Geometry
                        lardataalg_DetectorInfo
                        lardataobj_RecoBase
-                       nusimdata_SimulationBase
-                       nurandom_RandomUtils_NuRandomService_service
+                       nusimdata::SimulationBase
+                       nurandom::RandomUtils_NuRandomService_service
                        art::Framework_Core
                        art::Framework_Principal
                        art::Framework_Services_Registry
                        art_root_io::tfile_support
                        art_root_io::TFileService_service
-                       ${ART_FRAMEWORK_SERVICES_OPTIONAL_RANDOMNUMBERGENERATOR_SERVICE}
+                       art::Framework_Services_Optional_RandomNumberGenerator_service
                        art::Persistency_Common
                        art::Persistency_Provenance
                        art::Utilities
                        canvas::canvas
                        messagefacility::MF_MessageLogger
-                       CLHEP::CLHEP
-                       ${ROOT_BASIC_LIB_LIST}
+                       CLHEP::Random
                        ROOT::Core
+                       ROOT::Tree
 )
 
 install_headers()
